@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!--Titulo-->
+    <title>Proyecto Final - CV</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rowdies&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <!--Barra de navegacion responsiva-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-chevron-bar-down"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/logoM.png" width="50" alt="Logo de la Pagina Web">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#informacionPersonal">Información Personal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidad">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comentario">Sugerencias</a>
+              </li>
+            </ul> 
+            
+          </div>
+        </div>
+    </nav>
+   <!--Info Personal-->
+   <section class="info" id="informacionPersonal">
+    <div class="cuadro-info d-flex flex-column justify-content-center align-items-center">
+      <img class="info-foto" src="imagenes/foto-perfil.png" alt="Foto de Mariano Micca">
+            <h1>Hola, soy Mariano Micca</h1>
+            <h2 id="informacion" class="info_menu"></h2>
+            <div class="info-iconos d-flex flex-wrap align-items-center justify-content-center">
+              <div class="enlace" onmouseout="cambia_texto(' ')">
+                <i class="bi bi-envelope-at" onmouseover="cambia_texto('correo1@correo.com')" ></i>
+              </div>
+              <div class="enlace" onmouseout="cambia_texto(' ')">
+                <i class="bi bi-calendar3" onmouseover="cambia_texto('29/05/1996')"></i>
+              </div>
+              <div class="enlace" onmouseout="cambia_texto(' ')">
+                <i class="bi bi-geo-alt" onmouseover="cambia_texto('Av. 9 de julio 2245 - Mza')"></i>
+              </div>
+              <div class="enlace" onmouseout="cambia_texto(' ')">
+                <i class="bi bi-telephone" onmouseover="cambia_texto('(427) 548-1722')"></i>
+              </div>
+              
+              </div>
+            </div>
+    </div>
+
+   </section>
+   <!--Experiencia-->
+   <section id="experiencia" class="mi_experiencia seccion-oscura">
+    <div class="experiencia_contenedor">
+        <h2 class="seccion-titulo">Mi experiencia...</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan mollis risus, eget consequat quam eleifend et. Vivamus suscipit eu sapien eu semper. Fusce at convallis risus, sed pellentesque mi. Nam egestas, justo eget lobortis placerat, nulla tellus sodales felis, eget interdum justo quam at risus. Nunc viverra risus vel sagittis tincidunt. Duis elementum faucibus metus, ac tempus erat venenatis sit amet. Quisque quis hendrerit neque. Curabitur tortor urna, semper vel tristique id, fermentum a arcu. Aenean eu accumsan mi, nec lacinia elit. Nunc posuere diam eget augue tempus, ut placerat augue commodo. Nunc quis enim nec enim tristique pharetra ullamcorper sed sem. Integer ligula velit, cursus non eros sed, aliquam condimentum justo. Morbi viverra ut orci quis semper.</p>
+    </div>
+  </section>
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!--Tarjeta HTML-->
+        <div class="columna col-12 col-md-3">
+          <img src="imagenes/logo_html.png" alt="logo html" class="logos_lenguajes">
+          <p class="experiencia-titulo">HTML</p>
+          <p class="experiencia-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan mollis risus, eget consequat quam eleifend et. Vivamus suscipit eu sapien eu semper.</p>   
+        </div>
+         <!--Tarjeta CSS-->
+         <div class="columna col-12 col-md-3">
+          <img src="imagenes/logo_css.png" alt="logo css" class="logos_lenguajes">
+          <p class="experiencia-titulo">CSS</p>
+          <p class="experiencia-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan mollis risus, eget consequat quam eleifend et. Vivamus suscipit eu sapien eu semper.</p>   
+        </div>
+        <!--Tarjeta JS-->
+        <div class="columna col-12 col-md-3">
+          <img src="imagenes/logo_js.png" alt="logo javascript" class="logos_lenguajes">
+          <p class="experiencia-titulo">JavaScript</p>
+          <p class="experiencia-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan mollis risus, eget consequat quam eleifend et. Vivamus suscipit eu sapien eu semper.</p>   
+        </div>
+        <!--Tarjeta Bootstrap-->
+        <div class="columna col-12 col-md-3">
+          <img src="imagenes/logo_bootstrap.png" alt="logo bootstrap" class="logos_lenguajes">
+          <p class="experiencia-titulo">Bootstrap</p>
+          <p class="experiencia-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan mollis risus, eget consequat quam eleifend et. Vivamus suscipit eu sapien eu semper.</p>   
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Habilidades-->
+  <section class="habilidades seccion-oscura" id="habilidad">
+    <div class="habilidades_contenedor">
+      <h2 class="seccion-titulo">Mis Habilidades son:</h2>
+      <ul>
+        <li>Creatividad</li>
+        <li>Iniciativa y aprendizaje activo</li>
+        <li>Seguimiento y control tecnológico</li>
+        <li>Liderazgo</li>
+        <li>Sentido crítico</li>
+        <li>Resolución de problemas</li>
+        <li>Flexibilidad</li>
+        <li>Empatía e inteligencia emocional</li>
+        <li>Pensamiento analítico</li>
+        <li>Capacidad de persuación</li>
+      </ul>
+    </div>
+  </section>
+  <!--Sugerencias-->
+  <section class="sugerencias seccion-clara" id="comentario">
+    <div class="container text-center sugerencias_contenedor">
+      <div class="row">
+        <div class="col">
+          <h2 class="seccion-titulo">Dejame tu comentario o sugerencia...</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <form action="">
+            <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required><br>
+            <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" required><br>
+            <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" placeholder="tu comentario o sugerencia es..." maxlength="300"></textarea>
+            <button type="button" id="enviar">Enviar datos!</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-6">
+          <div id="estado1">
+            <img src="imagenes/correo.png" alt="imagen correo" class="imagen_correo">
+          </div>
+          <div id="estado2" style="display:none">
+            <p>Muchas gracias <span id="nombre_usuario"></span> por tu comentario.</p>
+            <img src="imagenes/correo_ok.png" alt="correo ok" class="imagen_correo_ok">
+          </div>
+          <div id="estado3" style="display:none">
+            <p class="texto_error">Por favor ingrese todos los datos..</p>
+            <img src="imagenes/correo_error.png" alt="error correo" class="imagen_correo_error">  
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!--Pie de página-->
+  <footer class="seccion-oscura">
+    <p class="texto_pieDePagina">Trabajo Final - Mariano Micca</p>
+  </footer>
+    <script src="js/funciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
