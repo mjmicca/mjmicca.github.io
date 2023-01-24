@@ -1,0 +1,308 @@
+/*Estilos Generales*/
+section{
+    display: flex;
+    flex-direction: column;  /*un elemento debajo del otro*/
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: 'Rowdies', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.seccion-oscura{
+    background-color: #1b1b32;
+    color: white;
+}
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+.seccion-titulo{
+    font-size: 2ren;
+    padding: 15px 0;
+    font-family: 'Rowdies', cursive;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Barra de Navegacion*/
+.navbar{
+    padding: 1rem;
+    background-image: linear-gradient(to right, #5968f1, #427dca);
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    color: white!important;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: gold!important;
+    font-weight:600;
+    border-bottom: 1px solid white;
+}
+.navbar-toggler{
+    color: white!important;
+    border-color: white!important;
+    font-size: 25px;
+}
+
+/*Info personal*/
+.info{
+    min-height: 450px;
+    padding-top: 30px auto;
+    align-items: center;
+    margin: 20px;
+}
+.cuadro-info{
+    min-height: 300px;
+    background-color: white;
+    border: 1px solid #5968f1;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;   
+}
+.info-foto{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+ 
+.info-iconos{
+    background-color: #5968f1;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+}
+.info-iconos div{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.info-iconos i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.info-iconos div:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+.info-iconos div:hover i{
+    color: black;
+}
+.enlace:hover{
+    cursor: pointer;
+}
+.info_menu{
+    height: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    color: rgb(100, 86, 4);
+}
+
+/*Experiencia*/
+.mi_experiencia{
+    min-height: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.experiencia_contenedor{
+    max-width: 800px;
+}
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+.experiencia .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+}
+.logos_lenguajes{
+    width: 150px;
+}
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.experiencia-texto{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+}
+
+/*Habilidades*/
+.habilidades{
+    min-height: 550px;
+}
+.habilidades_contenedor{
+    padding: 10px 60px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom right, #1b1b32 0% 50%, #427dca );
+    box-shadow: 8px 8px 7px 2px rgb(200,200,200,0.5);
+}
+.habilidades_contenedor ul li{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 3px;
+}
+
+/*Sugerencias*/
+.sugerencias{
+    min-height: 450px;
+    margin: 50px;
+}
+.sugerencias_contenedor{
+    min-height: 350px;
+    border: 2px solid #8080804d; 
+    padding: 20px;
+}
+
+form{
+	height: 95%;
+    min-width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin: 10px;
+	background-color:#d3d6f3;
+    justify-items: left;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+form input[type="text"],
+form input[type="email"]{
+	width:220px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px;
+	display:inline-block;
+}
+form button[type="button"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:10px;
+	border:1px solid #1b1b32;
+	border-radius:5px;
+	display:block;
+	color:white;
+	background-color:#1b1b32;
+}
+form button[type="button"]:hover{
+    color: #1b1b32;
+    background-color:#427dca;
+    border:1px solid white;
+    font-weight: bold;
+}
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+/*Panel de Info de Formulario sin enviar*/
+#estado1{
+    border: 2px solid rgb(56, 177, 233);
+    border-radius: 10px;
+    height: 95%;
+    margin: 10px;
+}
+.imagen_correo{
+    width: 300px;
+    height: 300px;
+}
+/*panel de de formulario enviado y estado "OK"*/
+#estado2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    border: 2px solid rgb(99, 219, 105);
+    border-radius: 10px;
+    height: 95%;
+    margin: 10px;
+    padding: 10px;
+}
+.imagen_correo_ok{
+    width: 200px;
+    height: 200px;
+}
+#nombre_usuario{
+    font-weight: bold;
+}
+/*panel de de formulario enviado y estado "ERROR"*/
+#estado3{
+    border: 2px solid rgb(240, 50, 50);
+    border-radius: 10px;
+    height: 95%;
+    margin: 10px;
+}
+.texto_error{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color:rgb(240, 50, 50);
+}
+.imagen_correo_error{
+    width: 200px;
+    height: 200px;
+}
+/*Pie de Página*/
+footer{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto_pieDePagina{
+    text-align: center;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/*BreakPoint - responsivo*/
+@media screen and (max-width: 767px){  /*esconde el icono cuando la pantalla es pequeña*/
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){  /*reduce foto y texto de info personal*/
+    .info-foto{
+        width: 120px;
+        height: 120px;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    .info_menu{
+        font-size: 1.4rem;
+    }
+}
